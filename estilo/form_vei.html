@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Veículo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(65, 73, 78), rgb(1, 1, 1));
+        }
+        .box {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%; /* Aumentei para dar mais espaço aos campos */
+        }
+        fieldset {
+            border: 3px solid rgb(255, 30, 30);
+        }
+        legend {
+            border: 1px solid rgb(255, 30, 30);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(255, 30, 30);
+            border-radius: 8px;
+        }
+        .inputBox {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput {
+            top: -20px;
+            font-size: 12px;
+            color: rgb(249, 24, 24);
+        }
+        #submit {
+            background-image: linear-gradient(to right, rgb(41, 51, 63), rgb(182, 12, 12));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover {
+            background-image: linear-gradient(to right, rgb(35, 39, 45), rgb(226, 15, 15));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário Veículo</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome do Veículo</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="marca" id="marca" class="inputUser" required>
+                    <label for="marca" class="labelInput">Marca</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="cor" id="cor" class="inputUser" required>
+                    <label for="cor" class="labelInput">Cor</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="placa" id="placa" class="inputUser" required>
+                    <label for="placa" class="labelInput">Placa</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="motor" id="motor" class="inputUser" required>
+                    <label for="motor" class="labelInput">Motor do Veículo</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="number" name="passageiros" id="passageiros" class="inputUser" required>
+                    <label for="passageiros" class="labelInput">Quantidade de Passageiros</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="number" name="portas" id="portas" class="inputUser" required>
+                    <label for="portas" class="labelInput">Quantidade de Portas</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="arcondicionado" id="arcondicionado" class="inputUser" required>
+                    <label for="arcondicionado" class="labelInput">Ar Condicionado</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="portamalas" id="portamalas" class="inputUser" required>
+                    <label for="portamalas" class="labelInput">Porta-malas</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="cambio" id="cambio" class="inputUser" required>
+                    <label for="cambio" class="labelInput">Câmbio</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="descricao" id="descricao" class="inputUser" required>
+                    <label for="descricao" class="labelInput">Descrição do Veículo</label>
+                </div>
+                <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
