@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Dados do Clientes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(65, 73, 78), rgb(1, 1, 1));
+            color: white;
+        }
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            width: 50%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid white;
+        }
+        th {
+            background-color: rgb(179, 40, 40);
+        }
+        tr:hover {
+            background-color: rgba(138, 55, 55, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 style="text-align: center;">Dados do Clientes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Cliente</th>
+                    <th>CPF</th>
+                    <th>CNPJ</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria Silva</td>
+                    <td>123.456.789-00</td>
+                    <td>12.345.678/0001-99</td>
+                    <td>Rua Exemplo, 123</td>
+                    <td>(11) 98765-4321</td>
+                    <td>maria@email.com</td>
+                    
+                </tr>
+                <tr>
+                    <td>João Pereira</td>
+                    <td>987.654.321-00</td>
+                    <td>98.765.432/0001-55</td>
+                    <td>Avenida Principal, 456</td>
+                    <td>(21) 99876-5432</td>
+                    <td>joao@email.com</td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
