@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <fieldset>
+
+            <form action="devolver.php">
+
+                <legend> <b>Devolução</b></legend>
+                
+                    <input type="hidden" name="origem" value="1" >
+
+                <div>
+                    <input type="hidden" name="nome_veiculo" value="<?php echo $nome_veiculo; ?>"  class="labelInput">
+                    <label for="nome_veiculo" class="labelInput">Nome Do Veiculo</label>
+                </div> <br><br>
+               
+                    <input type="hidden" name="id_aluguel" >
+                    <input type="hidden" name="id_veiculo" >
+    
+                <div>
+                    
+                    <label for="nome_veiculo" class="labelInput">Data de Devolução</label> <br>
+                    <input type="text" disabled name="data" value="dd/mm/AAAA" id=""  class="labelInput"> <br><br>
+                </div><br><br>
+
+                <div>
+                    <label for="km_rodados" class="labelInput">Km Rodados</label> <br>
+                    <input type="text" name="km_rodados" id=""  class="labelInput" > <br><br>
+                </div>
+
+                <div>
+                    <select name="met_pagamento" id="">
+                        <option value=""></option>
+                        <option value="1">Cartão</option>
+                        <option value="2">Pix</option>
+                        <option value="3">Dinheiro</option>
+                        
+                    </select> <br><br>
+                </div>
+                Metodo de pagamento:
+                <select name="met_pagamento" id="">
+                    <option value=""></option>
+                    <option value="1">Cartão</option>
+                    <option value="2">Pix</option>
+                    <option value="3">Dinheiro</option>
+                    
+                </select> <br><br>
+        
+                Valor cobrado:
+                <input type="text" name="valor" id="">
+        
+                <br><br>
+                <input type="submit" value="Confirmar devolução">
+            </form>
+
+        </fieldset>
+
+       
+
+    </div>
+    <script>
+        function data(){
+            let data = Date;
+
+            return data;
+        }
+    </script>
+</body>
+</html>
